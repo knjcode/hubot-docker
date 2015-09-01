@@ -1,0 +1,5 @@
+.DS_Store*
+.envrc
+.hubot_history
+fugu.yml
+node_modules
