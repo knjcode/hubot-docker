@@ -10,13 +10,18 @@
     "hubot-google-images": "^0.2.1",
     "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.1.1",
-    "hubot-maps": "0.0.2",
+    "hubot-maps": "wildtree/hubot-maps#multibyte",
+    "hubot-multiline-test": "prototype-cafe/hubot-multiline-test",
+    "hubot-otsukare-yamero": "prototype-cafe/hubot-otsukare-yamero",
     "hubot-pugme": "^0.1.0",
+    "hubot-qr-img-decoder": "prototype-cafe/hubot-qr-img-decoder",
     "hubot-redis-brain": "0.0.3",
     "hubot-rules": "^0.1.1",
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
-    "hubot-slack": "^3.3.0"
+    "hubot-slack": "^3.3.0",
+    "hubot-strong-qr-decoder": "prototype-cafe/hubot-strong-qr-decoder",
+    "hubot-youtube": "^1.0.1"
   },
   "engines": {
     "node": "0.10.x"

@@ -16,7 +16,7 @@ ENV NODE_VERSION 0.12.7
 ENV NPM_VERSION 2.14.1
 
 RUN buildDeps='curl ca-certificates' \
-    runDeps='git' \
+    runDeps='git python zbar-tools' \
 	&& set -x \
 	&& apt-get update && apt-get install -y $runDeps $buildDeps --no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/* \
@@ -31,7 +31,7 @@ RUN buildDeps='curl ca-certificates' \
 	&& npm cache clear
 
 RUN git config --global http.sslVerify false
-RUN git clone https://github.com/knjcode/hubot-docker /bot
+RUN git clone -b secuo-docker https://github.com/knjcode/hubot-docker /bot
 
 WORKDIR /bot
 

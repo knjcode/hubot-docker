@@ -7,5 +7,9 @@
   "hubot-maps",
   "hubot-redis-brain",
   "hubot-rules",
-  "hubot-shipit"
+  "hubot-shipit",
+  "hubot-multiline-test",
+  "hubot-otsukare-yamero",
+  "hubot-qr-img-decoder",
+  "hubot-strong-qr-decoder"
 ]
