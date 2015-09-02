@@ -31,7 +31,7 @@ RUN buildDeps='curl ca-certificates' \
 	&& npm cache clear
 
 RUN git config --global http.sslVerify false
-RUN git clone https://github.com/knjcode/hubot-docker /bot
+RUN git clone -b timeliner-docker https://github.com/knjcode/hubot-docker /bot
 
 WORKDIR /bot
 
