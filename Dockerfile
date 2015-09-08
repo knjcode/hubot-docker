@@ -31,7 +31,7 @@ RUN buildDeps='curl ca-certificates' \
 	&& npm cache clear
 
 RUN git config --global http.sslVerify false
-RUN git clone -b secuo-docker https://github.com/knjcode/hubot-docker /bot
+RUN git clone -b secuo-forever https://github.com/knjcode/hubot-docker /bot
 
 WORKDIR /bot
 
@@ -39,4 +39,4 @@ RUN npm install && npm cache clear
 
 EXPOSE 8080
 
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "forever" ]
