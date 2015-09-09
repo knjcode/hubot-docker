@@ -5,6 +5,8 @@
   "author": "knjcode <knjcode@gmail.com>",
   "description": "A simple helpful robot for your Company",
   "dependencies": {
+    "coffee-script": "^1.10.0",
+    "forever": "^0.15.1",
     "hubot": "^2.16.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-redis-brain": "0.0.3",
@@ -17,6 +19,7 @@
     "node": "0.12.x"
   },
   "scripts": {
-    "start": "bin/hubot -a slack"
+    "start": "bin/hubot -a slack",
+    "forever": "forever -c coffee node_modules/.bin/hubot -a slack"
   }
 }
